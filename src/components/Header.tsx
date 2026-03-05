@@ -3,8 +3,6 @@ import { LogIn, User, Lock, Mail } from 'lucide-react';
 import { auth } from '../firebase';
 import { signInWithEmailAndPassword, signOut } from 'firebase/auth';
 import { cn } from '../lib/utils';
-import Image from "next/image"
-
 
 interface HeaderProps {
   isAdmin: boolean;
@@ -58,7 +56,7 @@ const handleSecretClick = () => {
       <div className="flex items-center space-x-4">
         <div className="rotating-logo-container">
     <div className="rotating-logo-inner">
-      <Image
+      <img
         src="https://yielding-silver-7lbswgmn7e.edgeone.app/p.jpg"
         onClick={handleSecretClick}
         width={400}
@@ -67,7 +65,7 @@ const handleSecretClick = () => {
         alt="Prime Bharat News"
         className="rotating-logo-front"
       />
-      <Image
+      <img
         src="https://yielding-silver-7lbswgmn7e.edgeone.app/p.jpg"
         onClick={handleSecretClick}
         width={400}
