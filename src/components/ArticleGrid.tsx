@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown, ChevronUp, Clock, Share2 } from 'lucide-react';
 import { Article } from '../types';
 import { cn } from '../lib/utils';
-import Image from "next/image"
+
 
 interface ArticleCardProps {
   article: Article;
@@ -50,7 +50,7 @@ export const ArticleCard: React.FC<{ article: Article; t: any; index: number }> 
     >
       <div className="relative overflow-hidden aspect-video bg-zinc-200 dark:bg-zinc-800">
         {/* 🚀 LCP FIX: Pehle 2 articles ko fetchpriority="high" dena hai */}
-        <Image 
+        <img
           src={article.image} 
           alt={article.title}
           // @ts-ignore - fetchpriority Next.js standard images ke liye naya hai
