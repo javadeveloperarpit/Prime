@@ -1,5 +1,6 @@
 import React from 'react';
 import { Facebook, Instagram, Linkedin, Phone, Mail, MapPin, Award, LucideYoutube } from 'lucide-react';
+import Image from "next/image"
 
 interface FooterProps {
   t: any;
@@ -16,12 +17,12 @@ export const Footer: React.FC<FooterProps> = ({ t }) => {
           <div className="flex items-center space-x-3">
             <div className="rotating-logo-container">
     <div className="rotating-logo-inner">
-      <img
+      <Image
         src="https://yielding-silver-7lbswgmn7e.edgeone.app/p.jpg"
         alt="Prime Bharat News"
         className="rotating-logo-front"
       />
-      <img
+      <Image
         src="https://yielding-silver-7lbswgmn7e.edgeone.app/p.jpg"
         alt="Prime Bharat News"
         className="rotating-logo-back"
